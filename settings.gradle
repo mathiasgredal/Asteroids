@@ -1,0 +1,13 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        jcenter()
+    }
+}
+
+rootProject.name = 'Asteroids'
+
+include 'LibGDX'
+
+include 'Common'
+include 'Core'
