@@ -1,3 +1,4 @@
 dependencies {
+    implementation project(':Common')
     implementation "io.github.spair:imgui-java-binding:$imguiVersion"
 }

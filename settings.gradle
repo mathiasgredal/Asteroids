@@ -1,13 +1,19 @@
 pluginManagement {
     repositories {
+        mavenCentral()
         gradlePluginPortal()
-        jcenter()
     }
 }
 
 rootProject.name = 'Asteroids'
 
-include 'LibGDX'
-
 include 'Common'
 include 'Core'
+
+include 'BulletPlugin'
+include 'PlayerPlugin'
+include 'EnemyPlugin'
+include 'CollisionPlugin'
+include 'AsteroidPlugin'
+include 'InspectorPlugin'
+

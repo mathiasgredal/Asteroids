@@ -1,20 +1,17 @@
 package asteroids.main;
 
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-
+import asteroids.util.Configuration;
 
 
 class Main {
     public static void main(String[] args) {
-        LwjglApplicationConfiguration cfg =
-                new LwjglApplicationConfiguration();
-        cfg.title = "Asteroids";
-        cfg.width = 500;
-        cfg.height = 400;
-        cfg.resizable = false;
-        cfg.vSyncEnabled = true;
+        Configuration configuration = new Configuration();
+        configuration.setWidth(800);
+        configuration.setHeight(600);
+        configuration.setTitle("Asteroids");
+        configuration.setFullScreen(false);
+        configuration.setVsync(true);
 
-        new LwjglApplication(new MyGame(), cfg);
+        new AsteroidsGame(configuration).start();
     }
 }
